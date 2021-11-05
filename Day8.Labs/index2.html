@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var str = location.search;
+      console.log(str);
+      str.split("=");
+      console.log(str.split("="));
+      var name = str.substr(10).toUpperCase();
+      console.log(name);
+      var s = name.split("&");
+      console.log(s);
+      var u = s[0];
+      console.log(u);
+      var userName = u.replace(/[^\w\s]/gi, " ");
+      console.log(userName);
+      document.write(
+        "<h1> Thank you, " + userName + ", for regestering in our website.</h1>"
+      );
+
+      var city = s[2].substr(5);
+      console.log(city);
+
+      if (s.length == 6) {
+        localStorage.setItem("username", userName);
+        localStorage.setItem("City", city);
+
+      } else if (s.length == 5){
+        localStorage.removeItem("username");
+        localStorage.removeItem("City");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+[{
+    "ID":1,
+    "name":"Ahmed Mamdouh", 
+    "Age":23,
+    "Address": {
+        "street": "Soliman Elhakeam",
+        "city": "Asyut",
+        "country": "Egypt"
+    },
+    "Skils":{
+        "skill1": "C#",
+        "skill2": "JavaScript",
+        "skill3": "HTML",
+        "skill4": "CSS",
+        "skill5": "OOP"
+    },
+    "IsLeader": true
+},
+{
+    "ID":2,
+    "name":"Mostafa Badr", 
+    "Age":27,
+    "Address": {
+        "street": "Maadi",
+        "city": "Cairo",
+        "country": "Egypt"
+    },
+    "Skils":{
+        "skill1": "Java",
+        "skill2": "C++",
+        "skill3": "Data Structure",
+        "skill4": "Math",
+        "skill5": "Time Management"
+    },
+    "IsLeader": true
+},
+{
+    "ID":3,
+    "name":"Moataz Mahmoud", 
+    "Age":30,
+    "Address": null,
+    "Skils":{
+        "skill1": "Node.JS",
+        "skill2": "JavaScript",
+        "skill3": "HTML5",
+        "skill4": "CSS3",
+        "skill5": "React"
+    },
+    "IsLeader": false
+}
+]
+
