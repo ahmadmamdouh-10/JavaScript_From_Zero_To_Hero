@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <a id="open"> Open New Window </a><br>
+    <a id="close"> Close New Window </a><br>
+
+
+    <script>
+        var str = location.search;
+        str.split("=");
+        var name = str.substr(10).toUpperCase();
+        var s = name.split("&");
+        var usrName = s[0];
+        document.write("<h1> Welcome "+ usrName + ", registeration succed!</h1>")
+
+
+
+        //----------------------------------
+
+        var win; 
+        document.getElementById("open").onclick=function(){
+            win = open("index.html","","width=300,height=300");
+            setTimeout(function(){
+                win.document.write("<p> 3-	Create a login form that redirect to another page when user submit the form, and put in this form textbox (user name) and password field (password) [textboxes must have name attribute] and button (login). User name text has default text “Enter your user name here”, when user clicks login he will be redirected to another page (the page given in the form action), use get method and on the other page get the user name (from the browser URL) and write on the page welcome + User Name in bold and big font letters. </p>")
+            },3000)
+            win.focus();
+        }
+
+        document.getElementById("close").onclick=function(){
+            win.focus();
+            win.close();
+        }
+    </script>
+</body>
+</html>
